@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "exp": "exp08_simplified",
+    "n": 200,
+    "overall": 0.785,
+    "n_prec": 0.48936170212765956,
+    "n_rec": 0.71875,
+    "n_f1": 0.5822784810126582,
+    "n_tp": 23,
+    "n_fp": 24,
+    "n_fn": 9,
+    "model_n_count": 47
+  },
+  "categories": {
+    "driver_spec_nonconformance": {
+      "tp": 23,
+      "fp": 24,
+      "fn": 9,
+      "prec": 0.4894,
+      "rec": 0.7188,
+      "f1": 0.5823,
+      "human_n": 32,
+      "model_n": 47
+    },
+    "cross_driver_inconsistency": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prec": 0.0,
+      "rec": NaN,
+      "f1": NaN,
+      "human_n": 0,
+      "model_n": 1
+    },
+    "spec_ambiguity_or_gap": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "prec": 1.0,
+      "rec": 0.25,
+      "f1": 0.4,
+      "human_n": 4,
+      "model_n": 1
+    },
+    "spec_authoring": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 3,
+      "prec": 0.5,
+      "rec": 0.25,
+      "f1": 0.3333,
+      "human_n": 4,
+      "model_n": 2
+    },
+    "test_infrastructure": {
+      "tp": 22,
+      "fp": 4,
+      "fn": 2,
+      "prec": 0.8462,
+      "rec": 0.9167,
+      "f1": 0.88,
+      "human_n": 24,
+      "model_n": 26
+    },
+    "not_relevant": {
+      "tp": 110,
+      "fp": 13,
+      "fn": 26,
+      "prec": 0.8943,
+      "rec": 0.8088,
+      "f1": 0.8494,
+      "human_n": 136,
+      "model_n": 123
+    }
+  }
+}

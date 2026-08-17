@@ -1,0 +1,4 @@
+anthropic>=0.97
+matplotlib>=3.10
+numpy>=2.0
+requests>=2.32

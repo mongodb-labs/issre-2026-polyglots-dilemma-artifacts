@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Regenerable from public sources (see README):
+data/tickets/
+data/chunks/
+data/sonnet_results/
+data/comments.jsonl
+data/driver_repos/
+data/specifications/
+data/pull.log
+*.pat
+.env

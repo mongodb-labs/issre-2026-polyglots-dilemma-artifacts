@@ -1,0 +1,66 @@
+{
+  "summary": {
+    "exp": "exp03_cot_spec_rule",
+    "n": 200,
+    "overall": 0.775,
+    "n_prec": 0.75,
+    "n_rec": 0.65625,
+    "n_f1": 0.7,
+    "n_tp": 21,
+    "n_fp": 7,
+    "n_fn": 11,
+    "model_n_count": 28
+  },
+  "categories": {
+    "driver_spec_nonconformance": {
+      "tp": 21,
+      "fp": 7,
+      "fn": 11,
+      "prec": 0.75,
+      "rec": 0.6562,
+      "f1": 0.7,
+      "human_n": 32,
+      "model_n": 28
+    },
+    "spec_ambiguity_or_gap": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 2,
+      "prec": 0.6667,
+      "rec": 0.5,
+      "f1": 0.5714,
+      "human_n": 4,
+      "model_n": 3
+    },
+    "spec_authoring": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "prec": 1.0,
+      "rec": 0.5,
+      "f1": 0.6667,
+      "human_n": 4,
+      "model_n": 2
+    },
+    "test_infrastructure": {
+      "tp": 19,
+      "fp": 21,
+      "fn": 5,
+      "prec": 0.475,
+      "rec": 0.7917,
+      "f1": 0.5937,
+      "human_n": 24,
+      "model_n": 40
+    },
+    "not_relevant": {
+      "tp": 111,
+      "fp": 16,
+      "fn": 25,
+      "prec": 0.874,
+      "rec": 0.8162,
+      "f1": 0.8441,
+      "human_n": 136,
+      "model_n": 127
+    }
+  }
+}

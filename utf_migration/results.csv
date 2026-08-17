@@ -1,0 +1,108 @@
+driver,sha,title,role,test_lines_deleted,test_lines_added,net_test_lines_removed,note
+RUST,f8378e55,RUST-485 Unified test runner (#249),runner_creation,20,2340,-2320,"Creates the UTF runner; this is the investment, not savings"
+RUST,e74b942d,RUST-749 Convert CRUD tests to unified format (#410),conversion,28,14,14,
+RUST,7079121d,DRIVERS-1713 Convert change stream spec tests to the unified format (#570),conversion,15,87,-72,
+RUST,bf12ff89,RUST-1186 Convert sessions tests to unified test format (#583),conversion,6,12,-6,
+RUST,5dcbbabb,RUST-1334 Use unified format command monitoring tests (#667),conversion,124,17,107,
+RUST,5000d323,RUST-1505 3.0 command event API (also deleted orphaned command-monitoring runner files),conversion,418,33,385,Primary subject is API refactor; incidentally deleted command_monitoring/event.rs (93L) and operation.rs (297L) that 5dcbbabb had left in place
+RUST,91a91e2f,RUST-1859 Sync bulk write spec tests (actually deleted entire crud_v1 runner),conversion,1606,33,1573,Misleading title; bulk of change is deleting 14-file crud_v1 runner (1379L) + retryable_writes legacy runner (199L)
+RUST,152f5bc0,RUST-817 Convert transactions tests to unified format (#1084),conversion,248,313,-65,
+RUST,e6e18279,RUST-1867 Convert retryable reads legacy tests to unified (#1139),conversion,16,1,15,
+RUST,a6d629fd,RUST-1879 Convert read/write concern operation tests to unified test format (#1168),conversion,20,39,-19,
+RUST,b821bb80,RUST-2069 Convert retryable writes construction tests to spec tests (#1234),conversion,111,4,107,
+RUST,7b0c2bc5,RUST-2077 Convert all CSFLE tests to unified format (#1491),conversion,2546,85,2461,
+JAVA,fa758caace,Implement standard unified test runner (#603),runner_creation,5,2005,-2000,Creates the UTF runner (2005L added); the investment
+JAVA,a655ae1439,Remove legacy GridFS test runner,conversion,776,0,776,
+JAVA,91cc64c3b9,Remove legacy GridFS test runner for Scala driver,conversion,333,0,333,
+JAVA,9b7b1dbec9,Convert remaining sessions spec tests to unified format,conversion,133,0,133,
+JAVA,f281a281fb,Convert change stream spec tests to unified test format,conversion,384,5,379,
+JAVA,9fcdefd48f,Migrate command monitoring tests to unified test runner,conversion,154,28,126,
+JAVA,4949548f1d,Replace existing SDAM integration spec tests with unified tests (#989),conversion,194,677,-483,"Net investment: added 677, deleted only 194 (new SDAM unified tests are more comprehensive)"
+JAVA,d85982def5,Port transactions spec tests to unified format (#1310),conversion,306,238,68,
+JAVA,03746fae5a,Convert legacy retryable writes tests to unified format (#1322),conversion,354,33,321,
+JAVA,d143d90a1e,Converted legacy CRUD tests to unified format (#1328),conversion,403,88,315,
+JAVA,e68d303755,Delete unused test class (TargetDocument),conversion,78,0,78,
+JAVA,262c785be6,Delete unused test class (JsonPoweredTestHelper),conversion,77,0,77,
+JAVA,ddd5c5b4f3,Convert legacy data lake tests to unified (#1332),conversion,98,80,18,
+JAVA,4127a229f3,Convert legacy write concern operation tests to unified format (#1347),conversion,1107,110,997,
+JAVA,4a44a001db,Convert legacy retryable reads tests to unified format (#1330),conversion,425,42,383,
+JAVA,722d9839da,Migrate com.mongodb.client.unified.UnifiedTest to JUnit 5 (#1410),runner_evolution,691,433,258,"JUnit 4->5 migration of the runner itself; deleted 691L, added 433L"
+JAVA,6dd96da75c,Remove Legacy based ClientSideEncryptionTests (#1799),conversion,595,0,595,
+JAVA,cefd9f1008,Remove unused JsonPoweredCrudTestHelper (#1838),conversion,1372,0,1372,
+JAVA,22154136e6,Remove unused OperationContextBinding test wrappers (#1903),conversion,300,8,292,
+PYTHON,6b0123594a,PYTHON-2033 Unified Test Format (#519),runner_creation,94,1254,-1160,Dec 2020. Created test/unified_format.py and test/test_unified_format.py.
+PYTHON,a3f0f91588,PYTHON-3123 Convert sessions spec tests to unified test format (#888),conversion,53,2,51,
+PYTHON,62a6302181,PYTHON-2683 Convert change stream spec tests to unified test format (#950),conversion,131,30,101,Jun 2022. Deleted large legacy test/test_change_stream.py runner (~4486 lines per agent — verify with measure.py)
+PYTHON,e37394d402,PYTHON-2723 Convert transactions spec tests to unified test format (#1543),conversion,29,64,-35,
+PYTHON,98658cfd1f,PYTHON-4245 Convert CRUD v1 spec tests to unified test format (#1751),conversion,145,1,144,
+PYTHON,6020ae474d,PYTHON-4249 Convert retryable reads spec tests to unified test format (#1754),conversion,1,8,-7,
+PYTHON,3235d392c1,PYTHON-4242 Convert retryable writes spec tests to unified test format (#1752),conversion,0,4,-4,
+PYTHON,5699f8029d,PYTHON-4267 Convert read/write concern spec tests to unified test format (#1763),conversion,22,11,11,
+PYTHON,000e50c076,PYTHON-4266 Migrate Atlas Data Lake tests to unified test format (#1760),conversion,25,6,19,
+PYTHON,7580309e99,PYTHON-4928 Convert CSFLE spec tests to unified test format (#2520),conversion,35,99,-64,
+PYTHON,ae88b5a08f,PYTHON-5530 Reduce usage of legacy test runner (#2642),conversion,262,4,258,Deleted 121L from test_encryption.py (both sync and async) legacy spec runner class
+PYTHON,b6cc22ffdd,PYTHON-5748 Remove unused SpecRunner class (#2725),conversion,1254,8,1246,Mar 2026. Final cleanup: deleted ~1254L from test/utils_spec_runner.py and test/asynchronous/utils_spec_runner.py
+CSHARP,7eb0900dc2,CSHARP-2837: Unified test format,runner_creation,25,5417,-5392,Dec 2020. Created UnifiedTestFormatTestRunner.cs and UnifiedTestOperations/ folder.
+CSHARP,f564452db2,CSHARP-4422: Custom xunit test cases discoverer for unified format tests,conversion,1334,509,825,Deleted 13+ per-spec runner shim .cs classes; consolidated into UnifiedTestSpecRunner.cs and UnifiedTestsDiscoverer.cs
+CSHARP,0eb2430cc7,CSHARP-3592: Convert CRUD v2 spec tests to unified test format,conversion,128,327,-199,
+CSHARP,681f15d2bb,CSHARP-3634: Convert change stream spec tests to unified test format,conversion,617,129,488,Deleted ChangeStreamTestRunner.cs (~608 lines)
+CSHARP,ee0a2664ec,CSHARP-4183: Convert APM spec tests to unified test format,conversion,1155,50,1105,
+CSHARP,225ea617f8,CSHARP-4227: Convert SDAM integration spec tests to unified test format,conversion,1236,1944,-708,
+CSHARP,b51b370f3d,CSHARP-4984: Convert retryable writes spec tests to unified test format,conversion,2024,31,1993,
+CSHARP,660f33d01f,CSHARP-3678: Convert transactions spec tests to unified test format (part 1),conversion,1347,970,377,
+CSHARP,84149265ca,"CSHARP-3678: Convert transactions spec tests to unified test format (part 2, convenient API)",conversion,134,79,55,
+CSHARP,c8050dc48d,CSHARP-5000: Convert read/write concern spec tests to unified test format,conversion,65,132,-67,Deleted OperationTestRunner.cs
+CSHARP,3cb8cb92eb,CSHARP-4052: Convert sessions spec tests to unified test format,conversion,253,1,252,Deleted MongoClientJsonDrivenSessionsTestRunner.cs and sessions/SessionsTestRunner.cs
+CSHARP,93b3717d55,CSHARP-4989: Convert retryable reads spec tests to unified test format,conversion,532,45,487,
+CSHARP,22f07c554c,CSHARP-4999: Migrate Atlas Data Lake tests to unified test format,conversion,103,14,89,Deleted AtlasDataLakeTestRunner.cs
+CXX,8ffd856d0d,CXX-1871 Unified test format (#781),runner_creation,48,2543,-2495,Apr 2021. Created unified_tests/ runner under src/mongocxx/test/spec/
+CXX,51e5701637,CXX-2239 Convert change streams spec tests to unified test format (#885),conversion,303,354,-51,Deleted change_stream.cpp legacy runner
+CXX,8815c878b9,CXX-3322 Delete atlas data lake (mongohouse) runner,conversion,207,1,206,Deleted mongohouse.cpp legacy runner
+SWIFT,a87457ad,SWIFT-913 Add data structures for unified test schema (#535),runner_creation,0,172,-172,Nov 2020. Created first UnifiedTestRunner/ Swift files.
+SWIFT,8bd6f978,SWIFT-913 Add support for test runner and test case setup (#543),runner_creation,9,310,-301,Nov 2020. Created UnifiedTestRunner.swift core class.
+SWIFT,f3f80215,SWIFT-1143 Test proxy as mongos (#639),conversion,81,186,-105,Jun 2021. Deleted CrudV2Tests.swift.
+SWIFT,c338d242,SWIFT-1575 Sync unified command monitoring tests and delete legacy runner (#757),conversion,366,8,358,Jun 2022. Deleted ~374L from CommandMonitoringTests.swift.
+SWIFT,55a2d428,"SWIFT-1191, SWIFT-1604: Switch to unified format change streams tests (#772)",conversion,293,8,285,Aug 2022. Deleted ~301L from SyncChangeStreamTests.swift.
+RUBY,a72ce6d3,RUBY-1998 Unified test format (#2121),runner_creation,2,1246,-1244,Dec 2020. Created spec/runners/unified/ and spec/spec_tests/unified_spec.rb. 3199 lines added.
+RUBY,103674397d,RUBY-2592 Convert change stream spec tests to unified test format (#2464),conversion,100,17,83,Deleted spec/spec_tests/change_streams_spec.rb and legacy YAML data files
+RUBY,a496436a07,RUBY-2583 Convert CRUD v2 spec tests to unified test format (#2467),conversion,0,2,-2,Deleted legacy YAML in data/crud_v2/; .rb runner spec/runners/crud.rb remains
+RUBY,88c54c3f5e,RUBY-3006 Convert APM spec tests to unified test format (#2523),conversion,74,14,60,Deleted spec/spec_tests/command_monitoring_spec.rb
+RUBY,2d1352c9cb,RUBY-3033 update sdam specs (#2598),conversion,26,232,-206,Deleted spec/spec_tests/sdam_integration_spec.rb (16L)
+RUBY,b85d10292f,RUBY-2815 Retry operations if connection handshake fails (#2437),conversion,3,52,-49,Added unified retryable reads/writes specs; legacy specs NOT deleted (both still exist at HEAD)
+CDRIVER,c99f53b9bc,CDRIVER-3422 add structure and error helpers (#698),runner_creation,33,281,-248,Created src/libmongoc/tests/unified/runner.c (120L).
+CDRIVER,d677bbb9cb,CDRIVER-3422 add unified test setup/teardown (#699),runner_creation,53,773,-720,
+CDRIVER,8a27205f0c,CDRIVER-3422 add entity map and BSON parser (#712),runner_creation,41,1593,-1552,
+CDRIVER,860e2b131f,CDRIVER-3422 add bsonutil (#729),runner_creation,559,1956,-1397,
+CDRIVER,56ada16ecd,CDRIVER-3422 remaining support of unified test format (#722),runner_creation,229,4736,-4507,"Final runner commit: added operation.c, result.c, test-diagnostics.c."
+CDRIVER,2d7938aa06,CDRIVER-3949/3963/3966 aborting txn unpins session (#783),conversion,2,13,-11,Reorganized transactions JSON: legacy/ subdirectory created. Misleading title; primarily a test layout reorganization for unified adoption.
+CDRIVER,2597f6d4d2,CDRIVER-3895: Remove dots/dollars validation; replace CRUD v2 legacy with unified (#801),conversion,188,371,-183,"Deleted 28 JSON files in json/crud/legacy/v2/, added unified equivalents."
+CDRIVER,932e7e4861,CDRIVER-4062 test load balancer on evg (#837),conversion,158,393,-235,Reorganized change_streams JSON into legacy/ subdirectory. Misleading title.
+CDRIVER,badc2af0b1,CDRIVER-3973 remove legacy change stream spec tests (#1569),conversion,187,0,187,Apr 2024. Deleted 4 JSON files in change_streams/legacy/ and 187L from test-mongoc-change-stream.c. The only spec area fully migrated in CDRIVER.
+GODRIVER,2e2efdfa13,"Implement a unified spec test runner (pre-UTF, GODRIVER-1261 etc.)",runner_creation,2305,2838,-533,"Sep 2019. Simultaneously created unified_spec_test.go (730L) and deleted crud_v2, gridfs, retryable_reads, transactions, sessions runners. Pre-UTF runner but first unification step."
+GODRIVER,07bbc23e35,GODRIVER-1394 Implement a unified test runner (#524),runner_creation,0,4578,-4578,"Oct 2020. Created full mongo/integration/unified/ package (55 files, 10,626L). This is the real UTF-compliant runner."
+GODRIVER,bf6c0bbbde,Use testing library for command monitoring spec tests (GODRIVER-1272),conversion,978,463,515,"Sep 2019. Deleted mongo/command_monitoring_test.go (845L), rewrote on mtest framework (+141L)."
+GODRIVER,b7f9264bd8,GODRIVER-1844 export unified test runner (#607),conversion,916,958,-42,Mar 2021. Renamed _test.go files to .go (making package importable); deleted legacy command_monitoring_test.go.
+GODRIVER,6ff1f5cd0d,Convert change streams spec tests to unified format (#949),conversion,352,140,212,May 2022. Deleted mongo/integration/change_stream_spec_test.go (255L).
+GODRIVER,4f6313e167,GODRIVER-2309 Convert sessions spec tests to unified test format (#998),conversion,19,1,18,
+GODRIVER,8bcd4675d0,GODRIVER-2434 Use unified spec test runner for APM tests (#1123),conversion,143,1,142,"Nov 2022. Deleted mongo/integration/command_monitoring_test.go (142L, the last legacy command-monitoring runner)."
+GODRIVER,1c35f30cdc,GODRIVER-1969 Use unified spec test runner for GridFS tests (#1121),conversion,495,46,449,Nov 2022. Deleted mongo/integration/gridfs_spec_test.go (495L).
+NODE,0b47a01442,test: Add unified spec runner scaffolding (#2689),runner_creation,8,1019,-1011,Jan 2021. Created test/functional/unified-spec-runner/ with initial runner files.
+NODE,b5f19ef9f4,test(NODE-2287): complete unified test runner (#2748),runner_creation,72,82,-10,Mar 2021. Completed the unified runner.
+NODE,196751514281,test(NODE-3187): port unified test runner (#2783),runner_creation,59,1774,-1715,May 2021. TypeScript rewrite of unified runner for 4.0 branch.
+NODE,b3c37211e4,test(NODE-3188): refactor transaction spec tests (#2831),conversion,18,48,-30,Jun 2021. Moved legacy transaction YAML to legacy/ subdir; no runner deletion yet.
+NODE,2b6e913f6d,port change stream spec tests and remove legacy tests,conversion,0,0,0,May 2022. Deleted legacy change-stream JSON/YAML test data files.
+NODE,6cae4b4f9b,test(NODE-4270): convert command monitoring tests to unified format (#3276),conversion,286,18,268,Jun 2022. Deleted command_monitoring.spec.test.js (284L legacy runner).
+NODE,1ca6269c87,test(NODE-5929): convert txn legacy spec tests (#3987),conversion,230,99,131,Feb 2024. Deleted transactions-convenient-api.spec.test.js (89L) and transactions.spec.test.js (137L).
+NODE,a500649e33,migrate gridfs tests to unified format,conversion,251,27,224,Jul 2024. Deleted gridfs.spec.test.js (235L legacy runner).
+NODE,357ca08646,test(NODE-3237): migrate legacy spec tests to unified format (#4180),conversion,974,166,808,"Jul 2024. Large omnibus commit (617 files, ~78k insertions/44k deletions). Converts retryable reads/writes, read-write-concern, CRUD, atlas-data-lake legacy runners to unified."
+PHPLIB,4608a734,PHPLIB-493: Unified test runner POC,runner_creation,5,3811,-3806,Created 17 new files in tests/UnifiedSpecTests/ (+3811L). Runner is larger than the sum of what it replaced.
+PHPLIB,a54358b4,PHPLIB-1289: Remove GridFS legacy spec test runner,conversion,389,14,375,388L: tests/GridFS/SpecFunctionalTest.php fully deleted
+PHPLIB,a9e29770,PHPLIB-1289: Remove CRUD v2 legacy spec test runner,conversion,155,0,155,155L: tests/SpecTests/CrudSpecTest.php fully deleted
+PHPLIB,20e8f917,PHPLIB-1289: Remove Change Streams legacy spec test runner,conversion,394,27,367,389L: ChangeStreamsSpecTest.php + shared helpers
+PHPLIB,f2cfb9ff,PHPLIB-1289: Remove Command Monitoring legacy spec test runner,conversion,248,0,248,248L: CommandMonitoringSpecTest.php + shared helpers
+PHPLIB,41920956,PHPLIB-1289: Remove Transactions legacy spec test runner,conversion,353,42,311,347L: TransactionsSpecTest.php
+PHPLIB,e82fa00d,PHPLIB-1289: Remove CRUD v1 legacy spec test runner,conversion,538,0,538,538L: tests/Collection/CrudSpecFunctionalTest.php fully deleted
+PHPLIB,74ec5c14,PHPLIB-1289: Remove Retryable Writes legacy spec test runner,conversion,127,0,127,127L: RetryableWritesSpecTest.php + shared helpers
+PHPLIB,a3033176,PHPLIB-1289: Remove Retryable Reads legacy spec test runner,conversion,139,62,77,135L: RetryableReadsSpecTest.php fully deleted
+PHPLIB,e1476690,PHPLIB-1289: Remove Atlas Data Lake legacy spec test runner,conversion,114,42,72,111L net (112 del - 1 add)
+PHPLIB,4ca84232,PHPLIB-1289: Remove Read/Write Concern legacy spec test runner,conversion,113,11,102,113L: ReadWriteConcernSpecTest.php fully deleted
